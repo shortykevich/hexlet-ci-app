@@ -9,10 +9,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: "Installing build:"
-        run: make setup
       - name: "Installing dependencies:"
         run: make install
+      - name: "Installing build:"
+        run: make setup
       - name: "Running tests:"
         run: make tests
       - name: "Running linter:"
