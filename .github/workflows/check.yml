@@ -9,8 +9,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: "Installing dependencies:"
-        run: make install
+          cache: npm
       - name: "Installing build:"
         run: make setup
       - name: "Running tests:"
